@@ -2,12 +2,19 @@ package com.cydeo.tests.day13_review_and_practices;
 
 import com.cydeo.pages.*;
 import com.cydeo.utilities.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 public class ExplicitWaitPractices {
 
@@ -78,6 +85,23 @@ public class ExplicitWaitPractices {
 
         //Check the String value is matching as expected: “It’s enabled!”
         Assert.assertTrue(dynamicControlsPage.message.getText().equals("It's enabled!"));
+
+/**         FluentWait          */
+/*
+        // Waiting 30 seconds for an element to be present on the page, checking
+        // for its presence once every 5 seconds.
+        Wait<WebDriver> wait = new FluentWait<WebDriver>(Driver.getDriver())
+                .withTimeout(Duration.ofSeconds(30))
+                .pollingEvery(Duration.ofSeconds(5))
+                .ignoring(NoSuchElementException.class);
+
+        WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
+            public WebElement apply(WebDriver driver) {
+                return driver.findElement(By.id("foo"));
+            }
+        });
+ */
+/**         FluentWait          */
 
     }
 

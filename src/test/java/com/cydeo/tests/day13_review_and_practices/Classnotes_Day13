@@ -62,6 +62,19 @@ findElement(LOCATOR); ----> TIMER STARTS
     - Very similar to ExplicitWaits (WebDriverWait).
     - We can change the polling time.
 
+    // Waiting 30 seconds for an element to be present on the page, checking
+    // for its presence once every 5 seconds.
+    Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+      .withTimeout(Duration.ofSeconds(30))
+      .pollingEvery(Duration.ofSeconds(5))
+      .ignoring(NoSuchElementException.class);
+
+    WebElement foo = wait.until(new Function<WebDriver, WebElement>() {
+      public WebElement apply(WebDriver driver) {
+        return driver.findElement(By.id("foo"));
+      }
+    });
+
 - ExplicitWait: (WebDriverWait)
     - Comes from Selenium library.
     - It can wait for different conditions to happen on the page.
@@ -71,7 +84,6 @@ findElement(LOCATOR); ----> TIMER STARTS
 - How to use explicit waits?
 
 #1- Create object of WebDriverWait class.
-
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
 
 #2- Use the object we just created to create our condition.
@@ -101,20 +113,13 @@ visibilityOfAllElements()
 visibilityOfAllElementsLocatedBy()
 visibilityOfElementLocated()
 
-
 - What is the difference in between ExplicitWait and ImplicitlyWait?
     - ImplicitlyWait is waiting for ONLY one condition to happen, which is if web element is located or not.
     - NoSuchElementException will be thrown by findElement() method if web element is not found during the polling of ImplicitlyWait
 
     - ExplicitWait can wait for many different conditions to happen.
     - TimeOutException will be thrown if condition does not happen.
-
-
 ====================================================================================================
-
-
-
-------------------------------------------------------------------------------------
 
 GIVE ALL ANSWERS AS IF YOU ARE ANSWERING IN THE INTERVIEW:
 
@@ -152,7 +157,6 @@ GIVE ALL ANSWERS AS IF YOU ARE ANSWERING IN THE INTERVIEW:
         - Return type: String
     - Where does the .getText() method, gets the text from?
         - .getText() method can only read in between the <openingTag> and </closingTag>
-
 
     - .getAttribute("attributeName"):
         - It accepts a String argument as an "attributeName".
@@ -211,14 +215,16 @@ GIVE ALL ANSWERS AS IF YOU ARE ANSWERING IN THE INTERVIEW:
 
 - HOW DO YOU HANDLE DYNAMIC WEB ELEMENTS?
 
-- We can use the xpath locator methods such as : contains, starts-with, and ends-with to locate web elements that has dynamic attribute value.
+- We can use the xpath locator methods such as :
+    -   contains,
+    -   starts-with,
+    -   ends-with to locate web elements that has dynamic attribute value.
 
 //tagName[contains(@attribute, 'value')]
 //tagName[starts-with(@attribute, 'value')]
 //tagName[ends-with(@attribute, 'value')]
 
 - We can also locate a static (not-changing/unique) parent or child and move from there to desired web element.
-
 
 -------------------------
 
@@ -234,7 +240,8 @@ GIVE ALL ANSWERS AS IF YOU ARE ANSWERING IN THE INTERVIEW:
 - Maven is a "build automation tool"
 
 - What is a "build"?
-- Repeating steps when we are creating and managing our maven project, such as: creating the folder structure, adding, compiling our code, testing, deploying
+- Repeating steps when we are creating and managing our maven project,
+    such as: creating the folder structure, adding, compiling our code, testing, deploying
 
 - What is the most important file in a Maven project?
 - pom.xml file
@@ -338,8 +345,8 @@ ALERTS
 
 #1- Non-JavaScript (HTML) Alerts:
     - How do we handle HTML alerts?
-    - If it is not blocking the page, if you are able to right click and inspect, it is an HTML Alert.
-    - We inspect, locate and click just as any other WebElement.
+        - If it is not blocking the page, if you are able to right click and inspect, it is an HTML Alert.
+        - We inspect, locate and click just as any other WebElement.
 
 #2- JavaScript Alerts
     - How many types we have?

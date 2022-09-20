@@ -24,11 +24,6 @@ public class T5_DynamicallyLoadedPageElements1 {
     }
 
 
-
-
-
-
-
     @Test
     public void required_field_error_message_test(){
         // 2. Click to start
@@ -44,18 +39,17 @@ public class T5_DynamicallyLoadedPageElements1 {
         // 4. Assert username inputbox is displayed
         Assert.assertTrue(dynamicLoad1Page.inputUsername.isDisplayed());
 
-
         // 5. Enter username: tomsmith
-
+        dynamicLoad1Page.inputUsername.sendKeys("tomsmith");
 
         // 6. Enter password: incorrectpassword
-
+        dynamicLoad1Page.inputPassword.sendKeys("incorrectpassword");
 
         // 7. Click to Submit button
-
+        dynamicLoad1Page.submitButton.click();
 
         // 8. Assert “Your password is invalid!” text is displayed.
-
+        Assert.assertTrue(dynamicLoad1Page.errorMessage.isDisplayed());
 
         Driver.closeDriver();
     }
