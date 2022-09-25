@@ -2,7 +2,7 @@ package com.cydeo.review.base;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
-import utilities.*;
+import com.cydeo.review.utilities.*;
 
 import java.util.concurrent.TimeUnit;
 

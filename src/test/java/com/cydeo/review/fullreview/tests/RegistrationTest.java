@@ -1,14 +1,14 @@
 package com.cydeo.review.fullreview.tests;
 
 import com.github.javafaker.Faker;
-import fullreview.pages.*;
+import com.cydeo.review.fullreview.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utilities.*;
+import com.cydeo.review.utilities.*;
 
 public class RegistrationTest {
 

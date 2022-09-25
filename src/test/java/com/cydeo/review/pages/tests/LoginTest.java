@@ -4,8 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import utilities.*;
-import week6.pages.*;
+import com.cydeo.review.utilities.*;
+import com.cydeo.review.week6.*;
 
 import java.util.concurrent.TimeUnit;
 
