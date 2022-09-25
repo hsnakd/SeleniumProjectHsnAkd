@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import com.cydeo.review.utilities.*;
+import utilities.*;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

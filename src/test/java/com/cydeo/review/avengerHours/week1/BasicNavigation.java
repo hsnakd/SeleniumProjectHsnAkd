@@ -1,4 +1,4 @@
-package com.cydeo.review.week1;
+package com.cydeo.review.avengerHours.week1;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;

@@ -1,6 +1,6 @@
 package com.cydeo.review.week4;
 
-import com.cydeo.review.base.TestBase;
+import com.cydeo.review.base.*;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.testng.Assert;
