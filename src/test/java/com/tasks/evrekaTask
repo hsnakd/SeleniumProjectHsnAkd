@@ -1,0 +1,30 @@
+        Evreka Software Test Engineer Evaluation Question
+        UI Test Assignment
+        We want you to perform a UI test on the site we share below. Afterwards, we expect
+        you to take a screenshot of this test result and send an e-mail to
+        dogukanmermutlu@evreka.co
+        https://cantunsee.space
+        Automation Test Assignment (via Selenium Automation Tool)
+        We expect you to automate the following steps via Selenium Web Driver, regardless of
+        checking for expected/actual results. We prefer Chrome as the browser, but the choice
+        is yours.
+        Notes: It may also be necessary to write code to accept the accept cookies warning.
+            1. Go to 'https://www.amazon.com.tr/'
+            2. Search iPhone13 512
+            3. Check that the results are listed
+            4. Click iPhone13 at the top of the list
+            5. Log the following values for each size
+                .Size information .Price .Color .Stock status
+
+            We expect an output similar to this screenshot.
+            
+                iPhone 13 Size:512 GB
+                Color:Yıldız Işığı Price:18.304,01TL
+                Stock:Stokta sadece 1 adet kaldı.
+                Process finihed with exit code 0
+                
+        You can send the project to us as a zip. These should be included in the zipped project;
+        ● Browser Driver,
+        ● pom.xml,
+        ● src (main, test),
+        ● Target (generated-test-sources, test-classes)

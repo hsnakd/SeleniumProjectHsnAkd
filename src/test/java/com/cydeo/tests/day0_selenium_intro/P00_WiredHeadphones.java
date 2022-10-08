@@ -45,3 +45,9 @@ public class P00_WiredHeadphones {
 
 
 }
+
+/**
+ * For using Pause Function
+ * select "Sources"
+ press F8+Ctrl+/ for Windows or  F8+Command+/  for Mac (or fn + F8).
+ */

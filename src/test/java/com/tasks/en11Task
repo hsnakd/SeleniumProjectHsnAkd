@@ -1,0 +1,26 @@
+N11 Favori Ürün Senaryosu
+1-	www.n11.com sitesi açılır.
+2-	Ana sayfanın açıldığı kontrol edilir.
+3-	Siteye login olunur.
+4-	Login işlemi kontrol edilir.
+5-	Iphone kelimesi aranır.
+6-	Iphone kelimesi aratıldığı kontrol edilir.
+7-	Arama sonuçları sayfasından 2. sayfa açılır.
+8-	2. sayfanın açıldığı kontrol edilir.
+9-	Sayfadaki 3. ürün favorilere eklenir.
+10-	Hesabım -> İstek Listem / Favorilerim sayfasına gidilir.
+11-	“Favorilerim” sayfası açıldığı kontrol edilir.
+12-	Eklenen ürün favorilerden silinir ve silme işlemi kontrol edilir.
+13-	Üye çıkış işlemi yapılır.
+
+Üstteki senaryo gerçeklenmeli.
+Raporlama yapılmalı sayfalar arası geçişte ve validasyon esnasında ekran görüntüsü alınmalı (rapor içerisine eklenmeli).
+Github üzerinden paylaşılmalı.
+Proje içerisine bir adet readme dosyası eklenmeli ve nasıl çalıştırılacağı yazılmalıdır.
+
+API çalışması
+
+https://petstore.swagger.io/ adresini kullanarak CRUD operasyonlarının yapıldığı başarılı ve başarısız
+senaryolar içeren test otomasyonu yazınız.
+
+
