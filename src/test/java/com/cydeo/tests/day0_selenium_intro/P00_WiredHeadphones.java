@@ -22,10 +22,10 @@ public class P00_WiredHeadphones {
         popUpX.click();
 
         // Move to Electronics ==> Audio ==> Wired Headphones
-        Actions a = new Actions(driver);
+        Actions action = new Actions(driver);
 
-            a.moveToElement(driver.findElement(By.xpath("(//div[@class='xtXmba']) [5]"))).perform();
-            a.moveToElement(driver.findElement(By.xpath("//a[@class='_6WOcW9 _2-k99T']"))).perform();
+        action.moveToElement(driver.findElement(By.xpath("(//div[@class='xtXmba']) [5]"))).perform();
+        action.moveToElement(driver.findElement(By.xpath("//a[@class='_6WOcW9 _2-k99T']"))).perform();
 
         // Check locate
         String expectedResult = "Wired Headphones";

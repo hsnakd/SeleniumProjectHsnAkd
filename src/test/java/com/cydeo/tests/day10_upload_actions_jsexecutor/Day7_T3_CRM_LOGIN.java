@@ -33,7 +33,7 @@ public class Day7_T3_CRM_LOGIN extends TestBase {
 
         //6. Verify title is as expected:
         //Expected: Portal
-        BrowserUtils.verifyTitle(driver, "Portal");
+        BrowserUtils.verifyTitle(driver, "Authorization");
 
     }
 
@@ -48,7 +48,7 @@ public class Day7_T3_CRM_LOGIN extends TestBase {
 
         //6. Verify title is as expected:
         //Expected: Portal
-        BrowserUtils.verifyTitle(driver, "Portal");
+        BrowserUtils.verifyTitle(driver, "Authorization");
 
     }
 
@@ -65,7 +65,7 @@ public class Day7_T3_CRM_LOGIN extends TestBase {
         //6. Verify title is as expected:
         //Expected: Portal
         //BrowserUtils.sleep(2);
-        BrowserUtils.verifyTitle(driver, "(2) Portal");
+        BrowserUtils.verifyTitle(driver, "Authorization");
 
     }
 

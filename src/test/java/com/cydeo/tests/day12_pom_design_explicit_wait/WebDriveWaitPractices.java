@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class WebDriveWaitPractices {
 
     @Test
@@ -17,7 +19,7 @@ public class WebDriveWaitPractices {
         //2. Wait until title is “Dynamic title”
 
         //creating the wait object to be able to create certain condition to wait
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
         //use the "wait" object to create our expected condition
         wait.until(ExpectedConditions.titleIs("Dynamic title"));
@@ -39,7 +41,7 @@ public class WebDriveWaitPractices {
         Driver.getDriver().get("https://practice.cydeo.com/dynamic_loading/1");
 
         DynamicLoad1Page dynamicLoad1Page = new DynamicLoad1Page();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 
         //2. Click to start
         dynamicLoad1Page.startButton.click();

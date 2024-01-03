@@ -8,6 +8,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class T4_DynamicallyLoadedPageElements7 {
 
     // TC#4 : Dynamically Loaded Page Elements 7
@@ -24,7 +26,7 @@ public class T4_DynamicallyLoadedPageElements7 {
     @Test
     public void required_field_error_message_test(){
         //2- Wait until title is “Dynamic title
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.titleIs("Dynamic title"));
 
         //3. Assert: Message “Done” is displayed.
@@ -35,7 +37,7 @@ public class T4_DynamicallyLoadedPageElements7 {
         Assert.assertTrue(dynamicLoad7Page.spongeBobImage.isDisplayed());
 
 
-        Driver.closeDriver();
+//        Driver.closeDriver();
     }
 
 

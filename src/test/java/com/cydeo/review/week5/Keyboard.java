@@ -9,7 +9,7 @@ public class Keyboard extends TestBase {
 
     @Test
     public void test1() throws InterruptedException {
-        driver.get("http://practice.cybertekschool.com/key_presses");
+        driver.get("http://practice.cydeo.com/key_presses");
 
         Actions actions = new Actions(driver);
 

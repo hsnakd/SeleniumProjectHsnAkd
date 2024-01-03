@@ -23,7 +23,7 @@ public class Windows {
 
     @BeforeMethod
     public void getUrl() {
-        driver.get("http://practice.cybertekschool.com/windows");
+        driver.get("http://practice.cydeo.com/windows");
 
     }
 

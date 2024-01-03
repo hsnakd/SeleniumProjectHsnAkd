@@ -13,7 +13,7 @@ public class Hover extends TestBase {
     @Test
     public void test1() throws InterruptedException {
 
-        driver.get("http://practice.cybertekschool.com/hovers");
+        driver.get("http://practice.cydeo.com/hovers");
         Actions actions = new Actions(driver);
         List<WebElement> hovers = driver.findElements(By.xpath("//div[@class=\"figure\"]"));
         for (WebElement hover : hovers) {

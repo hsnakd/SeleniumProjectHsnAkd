@@ -9,9 +9,9 @@ public class Upload extends TestBase {
 
     @Test
     public void uploadTest(){
-        driver.get("http://practice.cybertekschool.com/upload");
+        driver.get("http://practice.cydeo.com/upload");
 
-        String path = "C:\\Users\\Zulpikar\\IdeaProjects\\EU9SeleniumReview\\src\\test\\java\\utilities\\upload.txt";
+        String path = "/Users/HSN/IdeaProjects/SeleniumProjectHsnAkd/src/test/java/com/cydeo/review/week5/upload.txt";
         driver.findElement(By.id("file-upload")).sendKeys(path);
         driver.findElement(By.id("file-submit")).click();
 

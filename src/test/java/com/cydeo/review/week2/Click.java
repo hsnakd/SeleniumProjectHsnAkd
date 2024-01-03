@@ -22,10 +22,17 @@ public class Click {
         for (WebElement btn : btns) {
             btn.click();
             Thread.sleep(1000);
+
+            WebElement result = driver.findElement(By.id("result"));
+            System.out.println("result.getText() = " + result.getText());
+
         }
+
+
 
         WebElement btn6 = driver.findElement(By.name("button6"));
         System.out.println(btn6.isDisplayed());
+
 
 
     }

@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.cydeo.review.utilities.*;
 import com.cydeo.review.week6.*;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class LoginTestWithWaits {
@@ -49,7 +50,7 @@ public class LoginTestWithWaits {
 
     @Test
     public void test4(){
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),10);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@type=\"submit\"]")));
         loginPage.loginMethod("tomsmith","SuperSecretPassword");
     }

@@ -23,7 +23,7 @@ public class iFrames {
 
     @BeforeMethod
     public void getUrl() {
-        driver.get("http://practice.cybertekschool.com/nested_frames");
+        driver.get("http://practice.cydeo.com/nested_frames");
 
     }
 

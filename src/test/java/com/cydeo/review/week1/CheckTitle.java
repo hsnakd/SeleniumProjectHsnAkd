@@ -14,7 +14,7 @@ public class CheckTitle {
 
         WebDriver driver = new ChromeDriver();
 
-        driver.get("http://practice.cybertekschool.com/");
+        driver.get("https://practice.cydeo.com/");
 
         driver.manage().window().maximize();
 

@@ -24,7 +24,7 @@ public class WebTables {
 
     @BeforeMethod
     public void getUrl() {
-        driver.get("http://practice.cybertekschool.com/web-tables");
+        driver.get("http://practice.cydeo.com/web-tables");
 
     }
 

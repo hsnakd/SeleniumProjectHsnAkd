@@ -15,7 +15,7 @@ public class SeleniumTest2 {
         WebDriver driver = new ChromeDriver();
 
         // 3- Test if driver is working as expected
-        driver.get("http://www.newlifesporbandirma.com");
+        driver.get("https://www.hakdogan.com");
 
     }
 

@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class T2_ExplicitWaitRemoveButton {
@@ -38,7 +39,7 @@ public class T2_ExplicitWaitRemoveButton {
         // We can set implicitlyWait time 0
         Driver.getDriver().manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOf(dynamicControlsPage.loadingBar));
 
         // 5- Verify:

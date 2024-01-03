@@ -10,6 +10,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class T5_DynamicallyLoadedPageElements1 {
 
     // TC#5 : Dynamically Loaded Page Elements 1
@@ -33,7 +35,7 @@ public class T5_DynamicallyLoadedPageElements1 {
 
         // 3. Wait until loading bar disappears
 
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOf(dynamicLoad1Page.loadingBar));
 
         // 4. Assert username inputbox is displayed

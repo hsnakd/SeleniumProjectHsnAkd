@@ -10,7 +10,7 @@ public class JSExecuter extends TestBase {
 
     @Test
     public void test1(){
-        driver.get("http://practice.cybertekschool.com/");
+        driver.get("http://practice.cydeo.com/");
         WebElement link = driver.findElement(By.xpath("//a[.=\"Dropdown\"]"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click()", link);
@@ -19,7 +19,7 @@ public class JSExecuter extends TestBase {
 
     @Test
     public void test2(){
-        driver.get("http://practice.cybertekschool.com/dynamic_controls");
+        driver.get("http://practice.cydeo.com/dynamic_controls");
         WebElement input = driver.findElement(By.xpath("//input[@type=\"text\"]"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         String text = "Cydeo EU9";

@@ -15,8 +15,8 @@ public class T1_Circle_Drag_N_Drop {
         Driver.getDriver().get("https://demos.telerik.com/kendo-ui/dragdrop/index");
 
         //Locate "Accept Cookies" button and click
-        WebElement acceptCookiesButton = Driver.getDriver().findElement(By.id("onetrust-accept-btn-handler"));
-        acceptCookiesButton.click();
+//        WebElement acceptCookiesButton = Driver.getDriver().findElement(By.id("onetrust-accept-btn-handler"));
+//        acceptCookiesButton.click();
 
         //Locate small and big circles to be able to drag them around
         WebElement smallCircle = Driver.getDriver().findElement(By.id("draggable"));

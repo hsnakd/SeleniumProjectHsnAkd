@@ -10,7 +10,7 @@ public class DragDrop extends TestBase {
 
     @Test
     public void test1(){
-        driver.get("http://practice.cybertekschool.com/drag_and_drop");
+        driver.get("http://practice.cydeo.com/drag_and_drop");
         Actions actions = new Actions(driver);
         WebElement source = driver.findElement(By.id("column-a"));
         WebElement target = driver.findElement(By.id("column-b"));
@@ -19,7 +19,7 @@ public class DragDrop extends TestBase {
 
     @Test
     public void test2() throws InterruptedException {
-        driver.get("http://practice.cybertekschool.com/drag_and_drop_circles");
+        driver.get("http://practice.cydeo.com/drag_and_drop_circles");
         Actions actions = new Actions(driver);
         WebElement source = driver.findElement(By.id("draggable"));
         WebElement target = driver.findElement(By.id("droptarget"));

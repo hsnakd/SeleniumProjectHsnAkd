@@ -2,6 +2,7 @@ package com.cydeo.review.week2;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,8 +27,8 @@ public class SendKeys {
         System.out.println(username.getAttribute("type"));
 
 
-//        username.sendKeys("tomsmith");
-//        password.sendKeys("SuperSecretPassword" + Keys.ENTER);
+        username.sendKeys("tomsmith");
+        password.sendKeys("SuperSecretPassword" + Keys.ENTER);
 
     }
 }
